@@ -16,33 +16,60 @@
                 <h2>-- I.P.E.T. n°66 "José Antonio Balseiro" --</h2>
 
             </header>
-            <div class="title"><h2 id="title">Capacitores Eléctricos</h2></div>
+            <div class="title">
+                <h2 id="title">Capacitores Eléctricos</h2>
+            </div>
             <div class="main-content">
-                <a id="mode" href="main/diap/d1.html">-Modo Diapositivas-</a>
+                <a target="_blank" id="mode" href="main/diap/d1.html">-Modo Diapositivas-</a>
                 <hr>
-                <img id="capMain" src="main/img/capacitorMain.jpg">
-                <p id="p1">    Los capacitores, también llamados condensadores, son componentes eléctricos pasivos que son capaces de almacenar cargas eléctricas y descargarlas en un circuito eléctrico. Están diseñados para almacenar una sierta tensión que será igual a la de la fuente que se halla conectado. Existen diversos tipos y tienen diversas funciones tanto en electricidad como electrónica.</p>
-                <table class="contents" border="1">
-                    <tr><th style="text-align:center;">Tabla de contenidos</th></tr>
-                    <tr><td>
-                        <ol>
-                            <li><a href="#composicion">Composición</a></li>
-                            <li><a href="#funcionamiento">Funcionamiento:</a>
-                                <ol>
-                                    <li><a href="#carga-y-descarga">Principio de funcionamiento: Carga y Descarga</a></li>
-                                    <li><a href="#tension">Tensión de trabajo y máxima</a></li>
-                                    <li><a href="#alterna">En corriente alterna</a></li>
-                                    <li><a href="#capacidad">Cargas y capacitancia</a></li>
-                                    <li><a href="#tiempo">Tiempo de carga y descarga</a></li>
-                                    <li><a href="#asosciacion">Asociación de Capacitores</a></li>
-                                </ol>
-                            </li>
-                            <li><a href="#tipos">Tipos</a></li>
-                            <li><a href="#usos">Usos en electrónica y electricidad</a></li>
-                            <li><a href="#temporizador">Circuito de temporizador</a></li>
-                        </ol>
-                    </td></tr>
-                </table>                    
+                <div name="definicion">
+                    <img id="capMain" src="main/img/capacitorMain.jpg">
+                    <p id="p1">    Los capacitores, también llamados condensadores, son componentes eléctricos pasivos que son capaces de almacenar cargas eléctricas y descargarlas en un circuito eléctrico. Están diseñados para almacenar una sierta tensión que será igual a la de la fuente que se halla conectado. Existen diversos tipos y tienen diversas funciones tanto en electricidad como electrónica.</p>
+                </div>
+                <br>
+                <div name="tabla de contenidos">
+                    <table class="contents" border="1">
+                        <tr><th style="text-align:center;">Tabla de contenidos</th></tr>
+                        <tr><td>
+                            <ol>
+                                <li><a href="#composicion">Composición</a></li>
+                                <li><a href="#funcionamiento">Funcionamiento:</a>
+                                    <ul>
+                                        <li>2.1 <a href="#carga-y-descarga">Principio de funcionamiento: Carga y Descarga</a></li>
+                                        <li>2.2 <a href="#tension">Tensión de trabajo y máxima</a></li>
+                                        <li>2.3 <a href="#alterna">En corriente alterna</a></li>
+                                        <li>2.4 <a href="#capacidad">Cargas y capacitancia</a></li>
+                                        <li>2.5 <a href="#tiempo">Tiempo de carga y descarga</a></li>
+                                        <li>2.6 <a href="#asosciacion">Asociación de Capacitores</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#tipos">Tipos</a></li>
+                                <li><a href="#usos">Usos en electrónica y electricidad</a></li>
+                                <li><a href="#temporizador">Circuito de temporizador</a></li>
+                            </ol>
+                        </td></tr>
+                    </table>
+                </div>
+                <br><br><br>
+                <hr>
+                <br><br>
+                <div id="composicion">
+                    <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Composición</h3>
+                    <p>Estos dispositivos están formados por dos placas o armaduras de un material conductor enfrentados y separados por un material dieléctrico, es decir, un medio aislante que se opone al paso de corriente.</p>
+                    <img src="main/img/composicion.png" id="compImg" style="margin-bottom:0px;">
+                    <p>El dieléctrico se dispone en una fina capa para que las placas o armaduras se encuentren lo más cerca posible.</p><br>
+                    <p>En los diagramas electrónicos se representa con los siguientes símbolos:</p><br>
+                    <img src="main/img/simbolos.png" id="simbolImg" style="max-width: 90%; height:110px;">
+                </div>
+                <br><br><br><hr><br><br>
+                <div id="funcionamiento">
+                    <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Funcionamiento</h3><br>
+                    <h2 id="carga-y-descarga">1. Principios: carga y descarga</h2><br>
+                    <img src="main/img/carga.png" id="cargaImg">
+                    <p>Al conectarse a una fuente de alimentación, los electrones del polo negativo de la fuente se mueven hacia la placa del condensador a la que está conectado, generando en esta cargas negativas, mientras que los electrones de la placa opuesta serán atraídos y se moverán hacia el polo positivo de la fuente, generando en esta otra cargas positivas.</p>
+                    <br><br>
+                    <p>Debido a la diferencia de potencial existente entre las placas del capacitor se genera una fuerza de atracción electromagnética que mantiene a las cargas en su lugar, incluso si se le desconecta del circuito. </p>
+                </div>                
             </div>
         </main>
     </body>

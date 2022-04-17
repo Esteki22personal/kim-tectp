@@ -91,13 +91,14 @@ h2{
 }
 p{
     text-align: left;
-    margin: 55px 4% 0% 4%;
+    margin: 0% 4% 0% 4%;
     font-size: 25px;
     font-weight: 300;
     font-family: Arial;
     text-indent: 30px;
 }
 #p1{
+    margin-top: 55px;
     position: absolute;
     top: 400px;
     max-width: 44%;
@@ -110,4 +111,12 @@ p{
     font-weight: 300;
     font-family: Arial;
     line-height: 40px;
+}
+#cargaImg{
+    position: relative;
+    float:right;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 300px;
+    height: 200px;
 }
