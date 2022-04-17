@@ -20,7 +20,7 @@
                 <h2 id="title">Capacitores Eléctricos</h2>
             </div>
             <div class="main-content">
-                <a target="_blank" id="mode" href="main/diap/d1.html">-Modo Diapositivas-</a>
+                <a target="_blank" id="mode" href="main/diap/d1.html">-Modo Diapositivas- (no disponible)</a>
                 <hr>
                 <div name="definicion">
                     <img id="capMain" src="main/img/capacitorMain.jpg">
@@ -35,12 +35,13 @@
                                 <li><a href="#composicion">Composición</a></li>
                                 <li><a href="#funcionamiento">Funcionamiento:</a>
                                     <ul>
-                                        <li>2.1 <a href="#carga-y-descarga">Principio de funcionamiento: Carga y Descarga</a></li>
-                                        <li>2.2 <a href="#tension">Tensión de trabajo y máxima</a></li>
-                                        <li>2.3 <a href="#alterna">En corriente alterna</a></li>
-                                        <li>2.4 <a href="#capacidad">Cargas y capacitancia</a></li>
-                                        <li>2.5 <a href="#tiempo">Tiempo de carga y descarga</a></li>
-                                        <li>2.6 <a href="#asosciacion">Asociación de Capacitores</a></li>
+                                        <li>2.1 <a href="#carga">Carga</a></li>
+                                        <li>2.2 <a href="#descarga">Descarga</a></li>
+                                        <li>2.3 <a href="#tiempo">Tiempo de carga y descarga</a></li>
+                                        <li>2.4 <a href="#tension">Tensión de máxima y de trabajo</a></li>
+                                        <li>2.5 <a href="#alterna">En corriente alterna</a></li>
+                                        <li>2.6 <a href="#capacidad">Cargas y capacitancia</a></li>
+                                        <li>2.7 <a href="#asosciacion">Asociación de Capacitores</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#tipos">Tipos</a></li>
@@ -55,20 +56,76 @@
                 <br><br>
                 <div id="composicion">
                     <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Composición</h3>
-                    <p>Estos dispositivos están formados por dos placas o armaduras de un material conductor enfrentados y separados por un material dieléctrico, es decir, un medio aislante que se opone al paso de corriente.</p>
-                    <img src="main/img/composicion.png" id="compImg" style="margin-bottom:0px;">
-                    <p>El dieléctrico se dispone en una fina capa para que las placas o armaduras se encuentren lo más cerca posible.</p><br>
-                    <p>En los diagramas electrónicos se representa con los siguientes símbolos:</p><br>
-                    <img src="main/img/simbolos.png" id="simbolImg" style="max-width: 90%; height:110px;">
+                    <div name="content">
+                        <p>Estos dispositivos están formados por dos placas o armaduras de un material conductor enfrentados y separados por un material dieléctrico, es decir, un medio aislante que se opone al paso de corriente.</p>
+                        <img src="main/img/composicion.png" id="compImg" style="margin-bottom:0px;">
+                        <p>El dieléctrico se dispone en una fina capa para que las placas o armaduras se encuentren lo más cerca posible.</p><br>
+                        <p>En los diagramas electrónicos se representa con los siguientes símbolos:</p><br>
+                        <img src="main/img/simbolos.png" id="simbolImg" style="max-width: 90%; height:110px;">
+                    </div>
                 </div>
                 <br><br><br><hr><br><br>
                 <div id="funcionamiento">
                     <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Funcionamiento</h3><br>
-                    <h2 id="carga-y-descarga">1. Principios: carga y descarga</h2><br>
-                    <img src="main/img/carga.png" id="cargaImg">
-                    <p>Al conectarse a una fuente de alimentación, los electrones del polo negativo de la fuente se mueven hacia la placa del condensador a la que está conectado, generando en esta cargas negativas, mientras que los electrones de la placa opuesta serán atraídos y se moverán hacia el polo positivo de la fuente, generando en esta otra cargas positivas.</p>
-                    <br><br>
-                    <p>Debido a la diferencia de potencial existente entre las placas del capacitor se genera una fuerza de atracción electromagnética que mantiene a las cargas en su lugar, incluso si se le desconecta del circuito. </p>
+                    <div name="content">
+                        <img src="main/img/carga.png" id="cargaImg">
+                        <p>Al conectarse a una fuente de alimentación, los electrones del polo negativo de la fuente se mueven hacia la placa del condensador a la que está conectado, generando en esta cargas negativas, mientras que los electrones de la placa opuesta serán atraídos y se moverán hacia el polo positivo de la fuente, generando en esta otra cargas positivas.</p>
+                        <br><br>
+                        <p>Debido a la diferencia de potencial existente entre las placas del capacitor se genera una fuerza de atracción electromagnética que mantiene a las cargas en su lugar, incluso si se le desconecta del circuito. </p>
+                        <img src="main/img/atraccion.png">
+                        <br><br>
+                        <div id="carga">
+                            <h2>1. Carga</h2><br>
+                            <div name="subContent">
+                                <p>El condensador se cargará hasta que entre sus placas exista la misma tensión que en la fuente. Esto debido a que a medida que este se carga, la diferencia de potencial con la fuente disminuye, provocando lo mismo con la corriente. Este proceso de carga puede apreciarse en el siguiente gráfico:</p>
+                                <img src="main/img/grafico.jpg" style="height:300px;">
+                                <p>El capacitor aumenta su tensión con el tiempo mientras que la corriente disminuye, hasta que la tensión de este sea igual al de la fuente.</p>
+                                <!-- <br> -->
+                                <p>Si se produce un desequilibrio de potencial, ya sea porque la tensión aplicada es mayor o menor a la cargada, se generará una nueva corriente a través de la cual se cargará si es mayor o descargará si es menor para que nuevamente se equilibre la diferencia de potencial</p>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div id="descarga">
+                            <h2>2. Descarga</h2><br>
+                            <div name="subContent">
+                                <p>Al conectar ambos terminales del dispositivo cargado, se genera un nuevo camino a través del cuál se mueven los electrones para llegar a la placa con cargas positivas, generando una corriente y descargando la tensión hasta que la diferencia de potencial entre las armaduras sea nula. Este proceso de descarga puede apreciarse en el siguiente gráfico:</p>
+                                <img src="main/img/grafico2.png" style="height:300px;">
+                                <p>En este se aprecia que la corriente aumenta de valor negativo hasta 0. Esto es debido a que en la descarga, la corriente fluye en sentido contrario a la que fluía con la fuente.</p>
+                                <br><br>
+                            </div>
+                        </div>
+                        <p>En el siguiente video puede apreciarse el proceso de carga y descarga con sus respectivos gráficos:</p><br>
+                        <video src="main/img/vids/Crocodile Clips - [circuitoDemostración(cargaYdescarga).ckt] 2022-04-17 01-14-52.mp4" controls="" style="max-width:80%;"></video>
+                        </br><br>
+                        <p>Si se conecta una carga en el circuito, la corriente máxima (I total) va a ser menor por la presencia de resistencia. Al ser menor la intensidad, el tiempo de carga y descarga también aumentará.</p>
+                        </br>
+                    </div>
+                    <div id="tiempo">
+                        <h2>3. Tiempo de carga y descarga</h2></br>
+                        <div name="content">
+                            <p>Se sabe que un condensador tarda en cargar un 63.2% el tiempo dado por el producto entre la resistencia en el circuito y la capacitancia del capacitor. Es decir:</p>
+                            <img src="main/img/t.rc.png">
+                            <p>Donde:<ul>
+                                <li class="p">t es el tiempo en segundos (s).</li>
+                                <li class="p">R es la resistencia en ohms (Ω).</li>
+                                <li class="p">C es la capacidad del condensador en faradios (f). Esta unidad se verá más adelante.</li>
+                            </ul></p></br>
+                            <p>Este valor conforma una constante de tiempo para la carga y descarga del capacitor. Se considera que este está completamente cargado o descargado cuando pasan el total de 5 constantes de tiempo. Es decir, el tiempo de carga y/o descarga es igual a:</p>
+                            <br>
+                            <img src="main/img/5rc.png" style="width:250px;">
+                            <br><br>
+                        </div>
+                    </div>
+                    <div id="tension">
+                        <h2>2.4 Tensión máxima y de trabajo</h2>
+                        <div name="content">
+                            <p>Si la tensión almacenada en el capacitor es muy alta, puede que la resistencia del dieléctrico no sea suficiente para contenerlo, por lo que este es penetrado por la corriente generada, llegando a causar un corto o una explosión dependiendo del tipo de condensador. Demostración de sobrecarga de capacitor:</p>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_4e5BiykhcY?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <p>Es por esto que tienen una tensión máxima a la que pueden ser sometidos sin dañarse, la llamada tensión de trabajo. Esta viene impresa en el encapsulado del capacitor.</p><br>
+                            <img src="main/img/tension-de-trabajo.jpg" style="width:200px;"><img src="main/img/tension-de-trabajo2.jpg" style="height:250px; margin-top: 35px;"><img src="main/img/tension-de-trabajo3.jpg" style="width:400px;">
+                        </div>
+                    </div>
                 </div>                
             </div>
         </main>

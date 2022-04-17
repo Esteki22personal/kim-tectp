@@ -97,11 +97,21 @@ p{
     font-family: Arial;
     text-indent: 30px;
 }
+.p{
+    text-align: left;
+    margin: 0% 4% 0% 4%;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Arial;
+    text-indent: 30px;
+}
 #p1{
-    margin-top: 55px;
+    margin-top: 43px;
     position: absolute;
-    top: 400px;
-    max-width: 44%;
+    top: 395px;
+    width: 47%;
+    max-width: 47%;
+    max-height: 400px;
 }
 .contents{
     text-align: left;
