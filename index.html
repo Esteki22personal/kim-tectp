@@ -26,7 +26,7 @@
                     <img id="capMain" src="main/img/capacitorMain.jpg">
                     <p id="p1">    Los capacitores, también llamados condensadores, son componentes eléctricos pasivos que son capaces de almacenar cargas eléctricas y descargarlas en un circuito eléctrico. Están diseñados para almacenar una sierta tensión que será igual a la de la fuente que se halla conectado. Existen diversos tipos y tienen diversas funciones tanto en electricidad como electrónica.</p>
                 </div>
-                <br>
+                <br><br>
                 <div name="tabla de contenidos">
                     <table class="contents" border="1">
                         <tr><th style="text-align:center;">Tabla de contenidos</th></tr>
@@ -41,7 +41,12 @@
                                         <li>2.4 <a href="#tension">Tensión de máxima y de trabajo</a></li>
                                         <li>2.5 <a href="#alterna">En corriente alterna</a></li>
                                         <li>2.6 <a href="#capacidad">Cargas y capacitancia</a></li>
-                                        <li>2.7 <a href="#asosciacion">Asociación de Capacitores</a></li>
+                                        <li>2.7 <a href="#asosciacion">Asociación de Capacitores:</a>
+                                            <ul>
+                                                <li>a.<a href="#serie">En serie</a></li>
+                                                <li>b.<a href="#paralelo">En paralelo</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a href="#tipos">Tipos</a></li>
@@ -78,7 +83,7 @@
                             <h2>1. Carga</h2><br>
                             <div name="subContent">
                                 <p>El condensador se cargará hasta que entre sus placas exista la misma tensión que en la fuente. Esto debido a que a medida que este se carga, la diferencia de potencial con la fuente disminuye, provocando lo mismo con la corriente. Este proceso de carga puede apreciarse en el siguiente gráfico:</p>
-                                <img src="main/img/grafico.jpg" style="height:300px;">
+                                <img src="main/img/grafico.jpg" style="height:300px;max-width:80%;">
                                 <p>El capacitor aumenta su tensión con el tiempo mientras que la corriente disminuye, hasta que la tensión de este sea igual al de la fuente.</p>
                                 <!-- <br> -->
                                 <p>Si se produce un desequilibrio de potencial, ya sea porque la tensión aplicada es mayor o menor a la cargada, se generará una nueva corriente a través de la cual se cargará si es mayor o descargará si es menor para que nuevamente se equilibre la diferencia de potencial</p>
@@ -89,7 +94,7 @@
                             <h2>2. Descarga</h2><br>
                             <div name="subContent">
                                 <p>Al conectar ambos terminales del dispositivo cargado, se genera un nuevo camino a través del cuál se mueven los electrones para llegar a la placa con cargas positivas, generando una corriente y descargando la tensión hasta que la diferencia de potencial entre las armaduras sea nula. Este proceso de descarga puede apreciarse en el siguiente gráfico:</p>
-                                <img src="main/img/grafico2.png" style="height:300px;">
+                                <img src="main/img/grafico2.png" style="height:300px;max-width:80%;">
                                 <p>En este se aprecia que la corriente aumenta de valor negativo hasta 0. Esto es debido a que en la descarga, la corriente fluye en sentido contrario a la que fluía con la fuente.</p>
                                 <br><br>
                             </div>
@@ -99,33 +104,110 @@
                         </br><br>
                         <p>Si se conecta una carga en el circuito, la corriente máxima (I total) va a ser menor por la presencia de resistencia. Al ser menor la intensidad, el tiempo de carga y descarga también aumentará.</p>
                         </br>
-                    </div>
-                    <div id="tiempo">
-                        <h2>3. Tiempo de carga y descarga</h2></br>
-                        <div name="content">
-                            <p>Se sabe que un condensador tarda en cargar un 63.2% el tiempo dado por el producto entre la resistencia en el circuito y la capacitancia del capacitor. Es decir:</p>
-                            <img src="main/img/t.rc.png">
-                            <p>Donde:<ul>
-                                <li class="p">t es el tiempo en segundos (s).</li>
-                                <li class="p">R es la resistencia en ohms (Ω).</li>
-                                <li class="p">C es la capacidad del condensador en faradios (f). Esta unidad se verá más adelante.</li>
-                            </ul></p></br>
-                            <p>Este valor conforma una constante de tiempo para la carga y descarga del capacitor. Se considera que este está completamente cargado o descargado cuando pasan el total de 5 constantes de tiempo. Es decir, el tiempo de carga y/o descarga es igual a:</p>
-                            <br>
-                            <img src="main/img/5rc.png" style="width:250px;">
-                            <br><br>
+                        <div id="tiempo">
+                            <h2>3. Tiempo de carga y descarga</h2></br>
+                            <div name="subContent">
+                                <p>Se sabe que un condensador tarda en cargar un 63.2% el tiempo dado por el producto entre la resistencia en el circuito y la capacitancia del capacitor. Es decir:</p>
+                                <img src="main/img/t.rc.png">
+                                <p>Donde:<ul style="margin-left:7%;">
+                                    <li class="p">t es el tiempo en segundos (s).</li>
+                                    <li class="p">R es la resistencia en ohms (Ω).</li>
+                                    <li class="p">C es la capacidad del condensador en faradios (f). Esta unidad se verá más adelante.</li>
+                                </ul></p></br>
+                                <p>Este valor conforma una constante de tiempo para la carga y descarga del capacitor. Se considera que este está completamente cargado o descargado cuando pasan el total de 5 constantes de tiempo. Es decir, el tiempo de carga y/o descarga es igual a:</p>
+                                <br>
+                                <img src="main/img/5rc.png" style="width:250px;">
+                                <br><br>
+                            </div>
                         </div>
-                    </div>
-                    <div id="tension">
-                        <h2>2.4 Tensión máxima y de trabajo</h2>
-                        <div name="content">
-                            <p>Si la tensión almacenada en el capacitor es muy alta, puede que la resistencia del dieléctrico no sea suficiente para contenerlo, por lo que este es penetrado por la corriente generada, llegando a causar un corto o una explosión dependiendo del tipo de condensador. Demostración de sobrecarga de capacitor:</p>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_4e5BiykhcY?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <br>
-                            <p>Es por esto que tienen una tensión máxima a la que pueden ser sometidos sin dañarse, la llamada tensión de trabajo. Esta viene impresa en el encapsulado del capacitor.</p><br>
-                            <img src="main/img/tension-de-trabajo.jpg" style="width:200px;"><img src="main/img/tension-de-trabajo2.jpg" style="height:250px; margin-top: 35px;"><img src="main/img/tension-de-trabajo3.jpg" style="width:400px;">
+                        <div id="tension">
+                            <h2>4. Tensión máxima y de trabajo</h2>
+                            <div name="subContent">
+                                <p>Si la tensión almacenada en el capacitor es muy alta, puede que la resistencia del dieléctrico no sea suficiente para contenerlo, por lo que este es penetrado por la corriente generada, llegando a causar un corto o una explosión dependiendo del tipo de condensador. Demostración de sobrecarga de capacitor:</p>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_4e5BiykhcY?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <p>Es por esto que tienen una tensión máxima a la que pueden ser sometidos sin dañarse, la llamada tensión de trabajo. Esta viene impresa en el encapsulado del capacitor.</p><br>
+                                <img src="main/img/tension-de-trabajo.jpg" style="width:200px;"><img src="main/img/tension-de-trabajo2.jpg" style="height:250px; margin-top: 35px;"><img src="main/img/tension-de-trabajo3.jpg" style="width:400px;">
+                                <br><br>
+                            </div>
                         </div>
-                    </div>
+                        <div id="alterna">
+                            <h2>5. En corriente alterna</h2>
+                            <div name="subContent">
+                                <p>En corriente alterna, el capacitor se carga y descarga por cada ciclo de frecuencia de la tensión, debido a la oscilación de tensión posiiva y negativa en el circuito. En el primer semiciclo positivo, el condensador se carga con la tensión de la fuente; una vez cargado la intensidad queda en 0. En el punto de 0V al terminar el semiciclo este se descarga para luego volverse a cargar con la polaridad opuesta en el siguiente semiciclo negativo. Esta secuencia se repite por cada ciclo de frecuencia. Cabe aclarar que para corriente alterna debe usarse un capacitor sin polaridad.</p>
+                                <br>
+                                <img src="main/img/alterna.gif" style="max-width:80%;">
+                                <p style="font-size:15px; text-align:center;">Demostración con fuente alterna de 1Hz</p>
+                            </div>
+                        </div>
+                        <div id="capacidad">
+                            <h2>6. Cargas y Capacitancia</h2>
+                            <div name="subContent">
+                                <p>La principal propiedad de los capacitores es su capacidad de almacenar energía eléctrica. Esta es la llamada "capacitancia" o capacidad.</p>
+                                <p>La cantidad de carga que pueda almacenar estará dada por el producto entre la capacitancia y la tensión aplicada (porque al aumentar la tensión aumenta la cantidad de cargas y su energía) quedandonos la siguiente expresión:</p>
+                                <br>
+                                <img src="main/img/cant-cargas.png" style="height:90px;">
+                                <br><br>
+                                <p>Donde:<ul style="margin-left:7%;">
+                                    <li class="p">Q es la cantidad de cargas medida en Culombios o Coulombs (C).</li>
+                                    <li class="p">C es la capacidad del capacitor medida en Faradios (f).</li>
+                                    <li class="p">V es la tensión aplicada medida en Voltios (V).</li>
+                                </ul></p><br>
+                                <p>Se dice que la capacidad de un condensador es igual a un faradio cuando almacena una carga de un Coulomb (Q) al aplicarse Un Voltio (V) de tensión. Al tratarse de una magnitud grade, se suele trabajar con submúltiplos como mili (m), micro (µ), nano (n) y pico (p).</p>
+                                <br>
+                                <p>La capacidad de un condensador está dada por las siguientes características constructivas: espesor del material dieléctrico, la calidad de este (dada por su constante dieléctrica) y la superficie de las armaduras. Mientras mayor superficie de las placas, menor separación entre estas dada por el espesor del dieléctrico y mejor calidad de este, se podrá almacenar mayor cantidad de cargas eléctricas a mayor voltaje. La relación entre estas características se manifiesta en la siguiente expresión matemática:</p>
+                                <br>
+                                <img src="main/img/capacitancia.png" style="height: 90px;">
+                                <br><br>
+                                <p>Donde:<ul style="margin-left:7%;">
+                                    <li class="p">ε es la constante dieléctrica del material aislante.</li>
+                                    <li class="p">s es la superficie de las armaduras en metros cuadrados (m<sup>2</sup>).</li>
+                                    <li class="p">d es el espesor del dieléctrico en metros (m).</li>
+                                </ul></p><br>
+                                <br>
+                                <p>En la siguiente tabla se encuentran los valores de constante dieléctrica de distintos materiales:</p><br>
+                                <img src="main/img/constantes-diel.png" alt="" style="height:450px;max-width:80%;max-height:450px;"><br>
+                                <br>
+                            </div>
+                        </div>
+                        <div id="asosciacion">
+                            <h2>7. Asociación de capacitores</h2>
+                            <div name="subContent">
+                                <p>De la misma forma que las resistencias, los condensadores conectados en serie y/o en paralelo en un circuito pueden asociarse o simplificarse a un solo condensador.</p><br>
+                                <div id="serie">
+                                    <h2>7.a En serie</h2>
+                                    <div name="subsubContent">
+                                        
+                                        <p>Al igual que las resistencias, se dice que están acoplados en serie cuando al terminal de salida de uno, se le une el de entrada de otro, y que por lo tanto les pasa la misma corriente. En consecuencia la carga de los condensadores en serie será la misma, sin embargo, al igual que en la resistencias, la tensión aplicada se repartirá entre todas en función a su capacitancia, cumpliendo también con la ley de tensiones de Kirchhoff.</p><br>
+                                        <img src="main/img/2ley.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Expresión matemática de la ley de tensiones de Kirchhoff</p><br>
+                                        <img src="main/img/tension-cap.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Fórmula de tensión despejada de la formula de carga</p><br><br>
+                                        <p>Para calcular la capacidad equivalente de los condensadores en serie se usa la misma fórmula usada para calcular la resistencia equivalente en paralelo:</p><br>
+                                        <img src="main/img/cro-serie.png"><br>
+                                        <img src="main/img/serie1.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Fórmula para serie de 2 capacitores</p><br><br>
+                                        <img src="main/img/cro-serie2.png"><br>
+                                        <img src="main/img/serie2.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Fórmula para serie de 3 o más capacitores</p><br>
+                                        <p>De la misma forma que en las resistencias en paralelo, el valor será menor que el menor capacitor en serie.</p>
+                                        <br><br>
+                                    </div>
+                                </div>
+                                <div id="paralelo">
+                                    <h2>7.b En paralelo</h2>
+                                    <div name="subsubContent">
+                                        <p>Al igual que las resistencias, se dice que están acoplados en paralelo cuando las terminales de todos los condensadores están conectados en paralelo, formado nodos que dividen el conductor en distintas mallas y por tanto la corriente que por este pasa. A diferencia que en las resistencias, la corriente que pase será igual en todas las mallas, a no ser que alguna lleve alguna carga resistiva. En caso contrario la corriente será igual a la total dividido la cantidad de mallas, cumpliendo con la ley de mallas de Kirchhoff.</p><br>
+                                        <img src="main/img/1ley2.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Expresión matemática de la ley de mallas de Kirchhoff</p><br>
+                                        <img src="main/img/1ley.png" style="height:90px;">
+                                        <p style="font-size:15px; text-align:center;">Fórmula de corrientes</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>                
             </div>
         </main>

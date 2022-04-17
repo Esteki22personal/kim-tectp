@@ -73,7 +73,7 @@ h2{
 
 .main-content{
     width: 90%;
-    height: 10000px;
+    height: auto;
     background-color: aliceblue;
     margin: auto;
     text-align: center;
@@ -85,9 +85,10 @@ h2{
 #capMain{
     max-height: auto;
     max-width: 40%;
-    margin: 55px 2% 0% 55%;
+    margin: -2% 4% 0 0;
     border-radius: 250px;
     box-sizing: border-box;
+    float: right;
 }
 p{
     text-align: left;
@@ -106,17 +107,14 @@ p{
     text-indent: 30px;
 }
 #p1{
-    margin-top: 43px;
-    position: absolute;
-    top: 395px;
-    width: 47%;
-    max-width: 47%;
-    max-height: 400px;
+    margin: 6% 5% 0 4%;
+    max-width: 48%;
 }
 .contents{
     text-align: left;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10%;
+    width: 55%;
     font-size: 25px;
     font-weight: 300;
     font-family: Arial;
