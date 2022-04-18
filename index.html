@@ -334,9 +334,23 @@
                         <p>El temporizador sería el circuito controlador del lado izquierdo. En este se encuentra una fuente de 12V , un pulsador normalmente abierto y un capacitor de 20mF en paralelo a una resistencia de 72Ω conectada en serie con el electroimán del relé.</p><br> 
                         <p>Al cerrar el circuito con el pulsador, se genera una corriente máxima que cargará el capacitor e cuestión de mili segundos, debido a que en la malla del capacitor la resistencia tiende a 0. Una vez cargado el capacitor su malla queda abierta, por lo que se generará una nueva corriente que pasará por la resistencia y el relé. El electroimán tiene una resistencia de 100Ω y empieza a funcionar con una potencia máxima de 1W; si se lo conecta en serie a la fuente su potencia sería mayor a máxima, por lo que se añade una resistencia de 72Ω que disipa la potencia restante protegiendo al relé. Al activarse este acciona el interruptor, cerrando el circuito principal. Sin embargo el pulsador es accionado por un menos de un segundo, causando que el circuito controlador se abra. Es en este momento cuando actúa el capacitor el cuál comienza a descargarse proveyendo de la tensión y corriente necesaria para mantener el relé activo por cierto tiempo, especificamente, 5,5 segundos. Una vez descargado, el electroimán deja de funcionar, volviendo a accionar el interruptor y abriendo el circuito principal.</p><br>
                         <p>La única razón por la que se usa un relé es para que el circuito principal se abra y cierre instantáneamente y por lo tanto, el LED se encienda y apague instantáneamente. Esto debido a que si directamente se conectara el LED en paralelo con un capacitor, lo que pasaría es que la caída de tensión disminuiría con el tiempo, y por lo tanto, el LED se iría apagando poco a poco en lugar de apagarse instantáneamente.</p>
-                    
+                        <br><br>
                     </div>
-                </div>              
+                </div>  
+                <div id="referencias"> 
+                    <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Fuentes y referencias</h3><br><b></b>
+                    <ul class="p">
+                        <li>Libro "Electrotecnia" por Pablo Alcalde San Miguel</li><br>
+                        <li>Fundación "San Valero" apuntes tema 4 : http://profesores.sanvalero.net/~w0320/TEMA%204.pdf</li><br>
+                        <li>Refrigeración Escobar : https://refrigeracionescobar.com.ar/el-capacitor-definicion-tipos-uso-circuitos-y-funcionamiento/</li><br>
+                        <li>Digikey Electronics : https://www.digikey.com/es/articles/fundamentals-understand-the-characteristics-of-capacitor-types</li><br>
+                        <li>TechLapse : COMPORTAMIENTO DEL CONDENSADOR EN CORRIENTE ALTERNA : https://www.youtube.com/watch?v=qvntOxWbZZQ</li><br>
+                        <li>Mentalidad de ingeniería : Capacitores Explicados - Los fundamentos funcionan los condensadores. Principio de funcionamiento : https://www.youtube.com/watch?v=h_m6qFRNITU</li><br>
+                        <li>Virtual Brain : Como Funciona un Capacitor o Condensador ⚡ Que es un Capacitor (Varios tipos!) : https://www.youtube.com/watch?v=oS4WQRXfm-M</li><br>
+                        <li>Electrónica Online: https://electronicaonline.net/componentes-electronicos/condensador/</li><br>
+                        <br><br>
+                    </ul>
+                </div>            
             </div>
         </main>
     </body>
