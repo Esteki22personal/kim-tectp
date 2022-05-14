@@ -9,8 +9,8 @@
         <meta charset="utf-8">
         <meta name="description" content="Kim Ferreyra Esteban - Trabajo práctico de Educación Tecnológica: Capacitores" />
         <script>
-            console.log(`Validación de creación concedida: Esteki22 (Kim Ferreyra Esteban) - Host: ${window.location.hostname}`)
-            console.log ('A todos los alumnos que tengan que copiar todo el texto de este sitio, perdón por escribir tanto xd. Atte, Esteki.')
+            console.log(`Validación de creación concedida: Esteki22 (Kim Ferreyra Esteban) - Host: ${window.location.hostname}`);
+            console.log ('A todos los alumnos que tengan que copiar todo el texto de este sitio, perdón por escribir tanto xd. Atte, Esteki.');
         </script>
     </head>
     <body>
@@ -350,23 +350,33 @@
                     <br>
                     <h3 style="text-align:left; margin-left: 4%; font-size: 30px;">Fuentes y referencias</h3><br><b></b>
                     <ul class="p">
-                        <li>Libro "Electrotecnia" por Pablo Alcalde San Miguel</li><br>
-                        <li>Fundación "San Valero" apuntes tema 4 : http://profesores.sanvalero.net/~w0320/TEMA%204.pdf</li><br>
-                        <li>Refrigeración Escobar : https://refrigeracionescobar.com.ar/el-capacitor-definicion-tipos-uso-circuitos-y-funcionamiento/</li><br>
-                        <li>Digikey Electronics : https://www.digikey.com/es/articles/fundamentals-understand-the-characteristics-of-capacitor-types</li><br>
-                        <li>TechLapse : COMPORTAMIENTO DEL CONDENSADOR EN CORRIENTE ALTERNA : https://www.youtube.com/watch?v=qvntOxWbZZQ</li><br>
-                        <li>Mentalidad de ingeniería : Capacitores Explicados - Los fundamentos funcionan los condensadores. Principio de funcionamiento : https://www.youtube.com/watch?v=h_m6qFRNITU</li><br>
-                        <li>Virtual Brain : Como Funciona un Capacitor o Condensador ⚡ Que es un Capacitor (Varios tipos!) : https://www.youtube.com/watch?v=oS4WQRXfm-M</li><br>
-                        <li>Electrónica Online: https://electronicaonline.net/componentes-electronicos/condensador/</li><br>
+                        <li><a href="main/docs/electrotecnia, pablo alcalde san miguel.pdf" target='_blank' download="Electrotecnia-Pablo_Alcalde_San_Miguel">Libro "Electrotecnia" por Pablo Alcalde San Miguel</a></li><br>
+                        <li><a href="#referencias" id="link">Fundación "San Valero" apuntes tema 4</a></li><br>
+                        <li><a href="https://refrigeracionescobar.com.ar/el-capacitor-definicion-tipos-uso-circuitos-y-funcionamiento/" target="_blank">Refrigeración Escobar</a></li><br>
+                        <li><a href="https://www.digikey.com/es/articles/fundamentals-understand-the-characteristics-of-capacitor-types" target="_blank">Digikey Electronics</a></li><br>
+                        <li><a href="https://www.youtube.com/watch?v=qvntOxWbZZQ" target="_blank">TechLapse : COMPORTAMIENTO DEL CONDENSADOR EN CORRIENTE ALTERNA</a></li><br>
+                        <li><a href="https://www.youtube.com/watch?v=h_m6qFRNITU" target="_blank">Mentalidad de ingeniería : Capacitores Explicados - Los fundamentos funcionan los condensadores. Principio de funcionamiento</a></li><br>
+                        <li><a href="https://www.youtube.com/watch?v=oS4WQRXfm-M" target="_blank">Virtual Brain : Como Funciona un Capacitor o Condensador ⚡ Que es un Capacitor (Varios tipos!)</a></li><br>
+                        <li><a href="https://electronicaonline.net/componentes-electronicos/condensador/" target="_blank">Electrónica Online</a></li><br>
                         <br><br>
                     </ul>
                 </div>            
             </div>
-            <div class="title" style="border-radius: 0 0 100px 100px;">
-                <p style="color:aliceblue;font-size:15px;text-align: center;">Sitio web estático creado por Esteki22 (Kim Ferreyra Esteban) - tecnologías HTML5  y CSS3</p><br>
-                <p style="color:aliceblue;font-size:15px;text-align: center;">©Copyright 2022 - Esteki22 - A todos los que tengan que copiar esto, perdón xd</p>
+            <div class="title" style=" height:auto; border-radius: 0 0 100px 100px;">
+                <p style="color:aliceblue;font-size:15px;text-align: center;padding:15px 20px 0px 20px;">Sitio web estático creado por Esteki22 (Kim Ferreyra Esteban) - tecnologías HTML5  y CSS3<br> Mención especial: Agustin Fuentes</p><br>
+                <p style="color:aliceblue;font-size:15px;text-align: center;padding:5px 20px 25px 20px;">©Copyright 2022 - Esteki22 - A todos los que tengan que copiar esto (yo incluído), perdón xd</p>
             </div>
         </main>
-        
+        <script>
+            let link = document.querySelector('#link');
+            link.addEventListener('click', ()=>{
+                let res = confirm('Atención! Al abrir este link el navegador le informará que la página no es segura. Sin embargo no tiene de qué preocuparse; esto es debido a que el sitio al que se dirige utiliza el protocolo http en lugar de https. Esto no es algo de lo que deba preocuparse en este caso ya que he revisado que la página sea de ruta segura. Ahora está seguro, pero tenga precaución al ver este tipo de aviso en otros sitios web. Para ir al sitio presione el botón "ir al sitio". También es posible que el navegador lo marque como una ventana emergente, clickee dos veces para solucionarlo.');
+                if(res){
+                    window.open('http://profesores.sanvalero.net/~w0320/TEMA%204.pdf');
+                }else{
+                    return 0
+                }
+            });
+        </script>
     </body>
 </html>
