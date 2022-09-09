@@ -69,6 +69,7 @@ h2{
     font-weight: 500;
     position:relative;
     top:5px;
+    user-select: none;
 }
 
 .main-content{
